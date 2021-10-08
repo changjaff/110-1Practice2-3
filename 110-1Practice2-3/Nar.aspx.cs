@@ -11,17 +11,18 @@ namespace _110_1Practice2_3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int num = 153;
-            int num_new, rem, sum = 0;
+            int num = 153;  //原始指定數值
+            int num_new, rem, sum = 0;  //num_new為複製一個原始數值、 rem為辨識第幾位數(餘數)、 sum 為儲存加總結果
 
             num_new = num;
 
             while (num_new != 0)
             {
-                rem = num_new % 10;
-                sum = sum + (rem * rem * rem);
-                num_new = num_new / 10;
+                rem = num_new % 10;  //算出第幾位數
+                sum = sum + (rem * rem * rem); // 算出相乘幾次方並加總
+                num_new = num_new / 10; //去掉一位數
             }
+            //以上重覆到各數算完為止(<=0)
 
             if (sum == num)
             {
@@ -31,7 +32,7 @@ namespace _110_1Practice2_3
             {
                 Response.Write("Flase");
             }
-                
+            //辦別是否 符合阿姆斯壯數 規則  
 
 
 
