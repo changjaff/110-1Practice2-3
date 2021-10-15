@@ -12,7 +12,7 @@ namespace _110_1Practice2_3
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            int M = 111;  //要判斷的數值
+            int M = 663166;  //要判斷的數值
             int M2 = 0; // 儲存原始數值
             int rev_M = 0; //辨識第幾位數(餘數)
             int sum = 0; //計算後的餘數
